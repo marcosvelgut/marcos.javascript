@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adivina las Capitales del Mundo</title>
   <link rel="stylesheet" href="VIDEOJUEGO.CSS">
-    <script src="VIDEOJUEGO.JS"></script>
- 
-</head>
+  </head>
 <body>
+  
   <div class="container">
-    <h1>¡Adivina las Capitales!</h1>
-    <div id="game">
+    
+    <div id="start-screen">
+      <h1>¡Bienvenido a Adivina las Capitales!</h1>
+      <button onclick="startGame()">Comenzar Juego</button>
+    </div>
+
+   
+    <div id="game" style="display: none;">
+      <h1>¡Adivina las Capitales!</h1>
       <div id="question">
         <p id="country-name"></p>
       </div>
@@ -23,6 +29,7 @@
       <p id="score">Puntaje: 0</p>
       <p id="timer">Tiempo: 30</p>
     </div>
+
     <div id="result" style="display: none;">
       <h2>¡Juego Terminado!</h2>
       <p>Tu puntaje final es: <span id="final-score"></span></p>
@@ -30,6 +37,6 @@
     </div>
   </div>
   
-  <script src="script.js"></script>
+  <script src="VIDEOJUEGO.JS"></script>
 </body>
 </html>
